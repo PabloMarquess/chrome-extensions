@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 200px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    .result {
+      margin: 8px 0;
+      font-size: 14px;
+      color: #333;
+    }
+    .no-selection {
+      color: #666;
+      font-style: italic;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <div class="result">Linhas: <span id="lines">0</span></div>
+    <div class="result">Caracteres: <span id="chars">0</span></div>
+    <div id="no-selection" class="no-selection" style="display: none;">
+      Nenhum texto selecionado
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

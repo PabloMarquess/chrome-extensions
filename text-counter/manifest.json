@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Contador de Texto",
+    "version": "1.0",
+    "description": "Conta linhas e caracteres do texto selecionado",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }]
+  }
