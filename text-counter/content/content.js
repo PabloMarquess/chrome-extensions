@@ -15,10 +15,10 @@ function showNotification(text) {
     clearTimeout(hideTimeout);
   }
   
-  // Esconde a notificação após 1 segundo
+  // Esconde a notificação após 3 segundo
   hideTimeout = setTimeout(() => {
     notification.classList.remove('show');
-  }, 1000);
+  }, 3000);
 }
 
 // Monitora mudanças na seleção de texto
